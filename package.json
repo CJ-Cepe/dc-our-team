@@ -1,0 +1,23 @@
+{
+  "name": "dc-our-team",
+  "version": "1.0.0",
+  "description": "![Thumbnail for the Meet the Team Section coding challenge](./thumbnail.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJ-Cepe/dc-our-team.git"
+  },
+  "author": "CJ-CEPE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJ-Cepe/dc-our-team/issues"
+  },
+  "homepage": "https://github.com/CJ-Cepe/dc-our-team#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
