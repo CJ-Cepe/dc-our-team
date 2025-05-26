@@ -13,41 +13,100 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Meet the Team Section | devChallenges.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <section>
-        <header>
-          <h1>Our Team</h1>
-          <p>Meet the brain</p>
+      <section class="team">
+        <header class="team__header">
+          <p>Our Team</p>
+          <h1>Meet the brain</h1>
           <p>
             We are proud to have them as part of our community and look forward
             to continuing to push the boundaries of what's possible in the world
             of digital art.
           </p>
         </header>
-        <div class="team-list">
-          <article class="team-member">
-            <h2>Liam Novak</h2>
-            <p>Software Engineer</p>
-          </article>
-          <article class="team-member">
-            <h2>Sophia Moretti</h2>
-            <p>Business Development Manager</p>
-          </article>
-          <article class="team-member">
-            <h2>Ethan Rossi</h2>
-            <p>Business Development Manager</p>
-          </article>
-          <article class="team-member">
-            <h2>Isabella Ricci</h2>
-            <p>UX Designer</p>
-          </article>
-          <article class="team-member">
-            <h2>Noah Conti</h2>
-            <p>Content Creator</p>
-          </article>
-        </div>
+        <article class="team__member">
+          <h2>Liam Novak</h2>
+          <p>Software Engineer</p>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./resources/person_1@2x.webp"
+            />
+            <img
+              src="./resources/person_1.webp"
+              alt="Liam Novak"
+              decoding="async"
+            />
+          </picture>
+        </article>
+        <article class="team__member">
+          <h2>Sophia Moretti</h2>
+          <p>Business Development Manager</p>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./resources/person_2@2x.webp"
+            />
+            <img
+              src="./resources/person_2.webp"
+              alt="Liam Novak"
+              decoding="async"
+            />
+          </picture>
+        </article>
+        <article class="team__member">
+          <h2>Ethan Rossi</h2>
+          <p>Business Development Manager</p>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./resources/person_3@2x.webp"
+            />
+            <img
+              src="./resources/person_3.webp"
+              alt="Liam Novak"
+              decoding="async"
+            />
+          </picture>
+        </article>
+        <article class="team__member">
+          <h2>Isabella Ricci</h2>
+          <p>UX Designer</p>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./resources/person_4@2x.webp"
+            />
+            <img
+              src="./resources/person_4.webp"
+              alt="Liam Novak"
+              decoding="async"
+            />
+          </picture>
+        </article>
+        <article class="team__member">
+          <h2>Noah Conti</h2>
+          <p>Content Creator</p>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./resources/person_5@2x.webp"
+            />
+            <img
+              src="./resources/person_5.webp"
+              alt="Liam Novak"
+              decoding="async"
+            />
+          </picture>
+        </article>
         <a href="#" class="see-all">See all members</a>
       </section>
     </main>
