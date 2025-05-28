@@ -55,7 +55,7 @@ h2 {
 
 /* --- content --- */
 .team {
-  max-width: 1200px;
+  max-width: px-to-rem(1135px);
   background-color: var(--color-light-gray);
   background-image: url("./resources/Background_decor@2x.webp");
   background-repeat: no-repeat;
@@ -143,6 +143,12 @@ h2 {
       width: 100%;
       height: 100%;
       object-fit: cover;
+
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus-within {
+        transform: scale(1.15);
+      }
     }
 
     &::after {
