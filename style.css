@@ -72,6 +72,7 @@ main {
 h1 {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-semibold);
+  color: var(--color-black, black);
 }
 
 h2 {
@@ -82,7 +83,7 @@ h2 {
 
 /* --- content --- */
 .team {
-  /* max-width: px-to-rem(1135px); */
+  max-width: 70.9375rem;
   width: 100%;
   background-color: var(--color-light-gray);
   background-image: url("./resources/Background_decor@2x.webp");
@@ -114,7 +115,7 @@ h2 {
 }
 @media all and (min-width: 1200px) {
   .team {
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-areas: "brain brain liam sophia" "see-all ethan isabella noah";
   }
 }
@@ -150,10 +151,12 @@ h2 {
 }
 .team__member picture {
   height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 .team__member picture img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
