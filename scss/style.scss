@@ -40,15 +40,6 @@ main {
   display: flex;
   justify-content: center;
   padding: fluid(20px, 92px, 412px, 1350px) fluid(12px, 86px, 412px, 1024px);
-
-  /* 
-  1350 -> 412
-  1024 -> 412
-
-  1135 -> 852 -> 388
-  92 -> 72 -> 20
-  116 -> 86 -> 12
-  */
 }
 
 h1 {

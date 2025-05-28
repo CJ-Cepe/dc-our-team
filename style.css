@@ -67,14 +67,6 @@ main {
   display: flex;
   justify-content: center;
   padding: clamp(1.25rem, 7.68vw + -0.73rem, 5.75rem) clamp(0.75rem, 12.09vw + -2.36rem, 5.38rem);
-  /* 
-  1350 -> 412
-  1024 -> 412
-
-  1135 -> 852 -> 388
-  92 -> 72 -> 20
-  116 -> 86 -> 12
-  */
 }
 
 h1 {
