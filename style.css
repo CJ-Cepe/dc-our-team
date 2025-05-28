@@ -66,7 +66,15 @@ main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: clamp(1.25rem, 7.68vw + -0.73rem, 5.75rem) clamp(0.75rem, 12.09vw + -2.36rem, 5.38rem);
+  /* 
+  1350 -> 412
+  1024 -> 412
+
+  1135 -> 852 -> 388
+  92 -> 72 -> 20
+  116 -> 86 -> 12
+  */
 }
 
 h1 {
@@ -107,11 +115,13 @@ h2 {
 }
 @media all and (min-width: 850px) {
   .team {
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "brain brain ." "liam sophia ethan" "see-all isabella noah";
   }
 }
-@media all and (min-width: 1250px) {
+@media all and (min-width: 1100px) {
   .team {
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "brain brain liam sophia" "see-all ethan isabella noah";
   }
 }
@@ -139,6 +149,7 @@ h2 {
   position: absolute;
   bottom: var(--padding);
   left: var(--padding);
+  margin-right: 1rem;
 }
 .team__member-info p {
   margin-top: 0.2rem;
