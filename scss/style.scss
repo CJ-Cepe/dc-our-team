@@ -58,6 +58,7 @@ h2 {
 .team {
   max-width: px-to-rem(1135px);
   width: 100%;
+  height: 100%;
   background-color: var(--color-light-gray);
   background-image: url("./resources/Background_decor@2x.webp");
   background-repeat: no-repeat;
@@ -102,7 +103,7 @@ h2 {
   }
 
   @media all and (min-width: 1200px) {
-    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
       "brain brain liam sophia"
       "see-all ethan isabella noah";
